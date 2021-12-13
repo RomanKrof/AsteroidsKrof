@@ -1,0 +1,50 @@
+﻿<Window x:Class="AsteroidsKrof.InfoBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsteroidsKrof"
+        mc:Ignorable="d"
+        Title="InfoBox" Height="350" Width="250">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        
+        <Rectangle Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="0" Fill="LightGray"/>
+        <Rectangle Grid.ColumnSpan="3" Grid.Row="6" Grid.Column="0" Fill="LightGray"/>
+        <Rectangle Grid.RowSpan="5" Grid.Row="1" Grid.Column="0" Fill="LightGray"/>
+        <Rectangle Grid.RowSpan="5" Grid.Row="1" Grid.Column="4" Fill="LightGray"/>
+
+        <Label x:Name="AsteroidName" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"
+               FontWeight="Bold" FontStyle="Italic"/>
+
+        <Label x:Name="AsteroidDate" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top"  HorizontalAlignment="Left" 
+               Content="Datum přiblížení" FontSize="15" FontWeight="Bold"/>
+        <Label x:Name="AsteroidDateT" Grid.Row="2" Grid.Column="1"/>
+
+        <Label x:Name="AsteroidSpeed" Grid.Row="3" Grid.Column="1" VerticalAlignment="Top"  HorizontalAlignment="Left"
+               Content="Rychlost" FontSize="15" FontWeight="Bold"/>
+        <Label x:Name="AsteroidSpeedT" Grid.Row="3" Grid.Column="1"/>
+
+        <Label x:Name="AsteroidDiameter" Grid.Row="4" Grid.Column="1" VerticalAlignment="Top"  HorizontalAlignment="Left" 
+               Content="Průměr tělesa" FontSize="15" FontWeight="Bold"/>
+        <Label x:Name="AsteroidDiameterT" Grid.Row="4" Grid.Column="1"/>
+
+        <Label x:Name="AsteroidDistance" Grid.Row="5" Grid.Column="1" VerticalAlignment="Top"  HorizontalAlignment="Left" 
+               Content="Vzdálenost od Země" FontSize="15" FontWeight="Bold"/>
+        <Label x:Name="AsteroidDistanceT" Grid.Row="5" Grid.Column="1"/>
+    </Grid>
+</Window>
